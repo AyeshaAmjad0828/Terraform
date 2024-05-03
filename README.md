@@ -16,3 +16,5 @@
     c. for MySQL
 
 4. EC2 instance should install  Nginx, Docker and Node 20 in Ubuntu environment.
+   
+   

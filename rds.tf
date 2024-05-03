@@ -3,8 +3,8 @@ resource "aws_db_instance" "postgresql_db" {
   allocated_storage    = 20
   engine               = "postgres"
   instance_class       = "db.t3.micro"
-  name                 = "postgresql-db-aa"
-  username             = "admin"
+  identifier           = "postgresql-db-aa"
+  username             = "postgres"
   password             = "admin123"
   publicly_accessible = true
   vpc_security_group_ids = [aws_security_group.postgresql_sg.id]
@@ -15,7 +15,7 @@ resource "aws_db_instance" "mysql_db" {
   allocated_storage    = 20
   engine               = "mysql"
   instance_class       = "db.t3.micro"
-  name                 = "mysql-db-aa"
+  identifier           = "mysql-db-aa"
   username             = "admin"
   password             = "admin123"
   publicly_accessible = true
